@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Albergue Jakue - Camino de Santiago</title>
+    <meta name="description" content="Hotel Albergue Jakue en Puente la Reina. Un lugar ideal para descansar en el Camino de Santiago. Habitaciones confortables, restaurante y jardines." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </head>
+  <body>
+    <div id="app">
+      <header class="header">
+        <div class="container header-container">
+          <a href="#" class="logo">
+            <span class="logo-icon"><i class="fa-solid fa-leaf"></i></span>
+            <span class="logo-text">Jakue</span>
+          </a>
+          
+          <nav class="nav-menu">
+            <ul class="nav-list">
+              <li><a href="#home" data-i18n="nav_home">Inicio</a></li>
+              <li><a href="#hotel" data-i18n="nav_hotel">El Hotel</a></li>
+              <li><a href="#albergue" data-i18n="nav_albergue">Albergue</a></li>
+              <li><a href="#services" data-i18n="nav_services">Servicios</a></li>
+              <li><a href="#restaurant" data-i18n="nav_restaurant">Restaurante</a></li>
+              <li><a href="#contact" data-i18n="nav_contact">Contacto</a></li>
+            </ul>
+          </nav>
+
+          <div class="header-actions">
+            <div class="lang-selector">
+              <button class="lang-btn" id="langBtn">
+                <i class="fa-solid fa-globe"></i> <span id="currentLang">ES</span>
+              </button>
+              <ul class="lang-dropdown" id="langDropdown">
+                <li data-lang="es">Español</li>
+                <li data-lang="en">English</li>
+                <li data-lang="fr">Français</li>
+                <li data-lang="pt">Português</li>
+                <li data-lang="eu">Euskera</li>
+                <li data-lang="ca">Català</li>
+                <li data-lang="ar">العربية</li>
+              </ul>
+            </div>
+            <a href="#book" class="btn btn-primary" data-i18n="btn_book">Reservar</a>
+            <button class="mobile-toggle" id="mobileToggle">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section id="home" class="hero">
+          <div class="hero-overlay"></div>
+          <div class="hero-content container">
+            <h1 data-i18n="hero_title">Bienvenido a Hotel Albergue Jakue</h1>
+            <p data-i18n="hero_subtitle">Tu descanso en el Camino de Santiago. Naturaleza, confort y gastronomía.</p>
+            <div class="hero-btns">
+              <a href="#hotel" class="btn btn-primary" data-i18n="btn_explore">Explorar Hotel</a>
+              <a href="#albergue" class="btn btn-outline" data-i18n="btn_albergue">Ver Albergue</a>
+            </div>
+          </div>
+        </section>
+
+        <section id="about" class="section about">
+          <div class="container about-grid">
+            <div class="about-text">
+              <span class="section-subtitle" data-i18n="about_subtitle">Nuestra Historia</span>
+              <h2 data-i18n="about_title">Más que un alojamiento</h2>
+              <p data-i18n="about_desc">Situado en Puente la Reina, cruce de caminos, el Hotel Albergue Jakue es el lugar perfecto para peregrinos y turistas. Ofrecemos un ambiente familiar rodeado de naturaleza.</p>
+              <ul class="features-list">
+                <li><i class="fa-solid fa-check"></i> <span data-i18n="feat_garden">Amplios Jardines</span></li>
+                <li><i class="fa-solid fa-check"></i> <span data-i18n="feat_parking">Parking Privado</span></li>
+                <li><i class="fa-solid fa-check"></i> <span data-i18n="feat_wifi">WiFi Gratuito</span></li>
+              </ul>
+            </div>
+            <div class="about-image">
+              <!-- Placeholder for about image -->
+              <div class="img-placeholder"></div>
+            </div>
+          </div>
+        </section>
+
+        <section id="services" class="section services">
+          <div class="container">
+            <div class="section-header">
+              <h2 data-i18n="services_title">Nuestros Servicios</h2>
+              <p data-i18n="services_desc">Todo lo que necesitas para una estancia inolvidable.</p>
+            </div>
+            <div class="services-grid">
+              <div class="service-card">
+                <i class="fa-solid fa-bed"></i>
+                <h3 data-i18n="serv_rooms">Habitaciones Confortables</h3>
+                <p data-i18n="serv_rooms_desc">Descansa en nuestras habitaciones totalmente equipadas.</p>
+              </div>
+              <div class="service-card">
+                <i class="fa-solid fa-utensils"></i>
+                <h3 data-i18n="serv_restaurant">Restaurante</h3>
+                <p data-i18n="serv_restaurant_desc">Disfruta de la mejor gastronomía local y menús del peregrino.</p>
+              </div>
+              <div class="service-card">
+                <i class="fa-solid fa-tree"></i>
+                <h3 data-i18n="serv_garden">Jardines y Terraza</h3>
+                <p data-i18n="serv_garden_desc">Relájate en nuestras zonas verdes después de una larga etapa.</p>
+              </div>
+              <div class="service-card">
+                <i class="fa-solid fa-bicycle"></i>
+                <h3 data-i18n="serv_bike">Bike Friendly</h3>
+                <p data-i18n="serv_bike_desc">Espacio seguro para guardar y reparar tu bicicleta.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="restaurant" class="section restaurant">
+          <div class="container restaurant-grid">
+             <div class="restaurant-image">
+              <!-- Placeholder for restaurant image -->
+              <div class="img-placeholder"></div>
+            </div>
+            <div class="restaurant-text">
+              <span class="section-subtitle" data-i18n="rest_subtitle">Gastronomía</span>
+              <h2 data-i18n="rest_title">Sabores de la Tierra</h2>
+              <p data-i18n="rest_desc">Nuestro restaurante ofrece una selección de platos tradicionales con un toque moderno, utilizando productos locales de temporada.</p>
+              <a href="#" class="btn btn-primary" data-i18n="btn_menu">Ver Menú</a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container footer-grid">
+          <div class="footer-col">
+            <a href="#" class="logo footer-logo">
+              <span class="logo-icon"><i class="fa-solid fa-leaf"></i></span>
+              <span class="logo-text">Jakue</span>
+            </a>
+            <p data-i18n="footer_desc">Tu hogar en el Camino de Santiago.</p>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer_links">Enlaces</h4>
+            <ul>
+              <li><a href="#home" data-i18n="nav_home">Inicio</a></li>
+              <li><a href="#hotel" data-i18n="nav_hotel">Hotel</a></li>
+              <li><a href="#restaurant" data-i18n="nav_restaurant">Restaurante</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer_contact">Contacto</h4>
+            <ul>
+              <li><i class="fa-solid fa-location-dot"></i> Puente la Reina, Navarra</li>
+              <li><i class="fa-solid fa-phone"></i> +34 948 34 10 17</li>
+              <li><i class="fa-solid fa-envelope"></i> info@hotelalberguejakue.com</li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer_social">Síguenos</h4>
+            <div class="social-links">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom container">
+          <p>&copy; 2025 Hotel Albergue Jakue. All rights reserved.</p>
+        </div>
+      </footer>
+
+      <a href="https://wa.me/34948341017" class="whatsapp-float" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
